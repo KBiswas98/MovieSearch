@@ -1,3 +1,5 @@
-pull repo
-npm i
-npm start
++pull repo
+
++npm i
+
++npm start
