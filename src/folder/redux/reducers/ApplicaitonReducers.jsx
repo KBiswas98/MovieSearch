@@ -3,6 +3,7 @@ import { SAVE_MOVIE } from '../config/constant';
 const initialState = {
   movie: null,
   isPending: true,
+  no: 1,
 };
 
 const ApplicationReducer = (state = initialState, action) => {
@@ -13,6 +14,11 @@ const ApplicationReducer = (state = initialState, action) => {
       return {
         isPending: false,
         movie: action.payload.data,
+      };
+    case 'SET_PAGE_NO':
+      return {
+        ...state,
+        no: action.payload,
       };
     default: return state;
   }

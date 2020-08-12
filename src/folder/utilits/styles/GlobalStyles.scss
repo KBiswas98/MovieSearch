@@ -81,3 +81,15 @@
         cursor: pointer;
     }
 }
+
+
+.show {
+    opacity: 1;
+}
+
+.notShow {
+    opacity: 0.5;
+    &:hover {
+        cursor: pointer;
+    }
+}

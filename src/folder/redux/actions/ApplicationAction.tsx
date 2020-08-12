@@ -7,3 +7,8 @@ export const getMovie = (bdy:String) => ({
   type: SAVE_MOVIE,
   payload: axios.get(`${API_MOVIE_DATA}/${bdy}&apikey=b5f92674`),
 });
+
+export const GoToPage = (no:Number) => ({
+  type: 'SET_PAGE_NO',
+  payload: no,
+});
