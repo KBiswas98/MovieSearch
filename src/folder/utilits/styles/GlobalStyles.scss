@@ -1,0 +1,83 @@
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 {
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    // background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+
+.xh2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.xh4 {
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+        transition-duration: 61s;
+        // text-decoration: underline;
+    }
+}
+
+.hoverstyle {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.inputFiled {
+    width: 400px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 0px 15px;
+}
+
+.option {
+    height: 31px;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.search {
+    // background-color: green;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition-duration: 300ms;
+
+    &:hover {
+        transition-duration: 300ms;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+}
