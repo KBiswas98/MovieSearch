@@ -12,7 +12,8 @@ import AppNavigation from '../../navigation/AppNavigation';
 const pConfig = {
   key: 'root',
   storage,
-  whiteList: ['FevReducers'],
+  whitelist: ['FevReducers'],
+  blacklist: ['ApplicationReducer'],
 };
 
 const pReducer = persistReducer(pConfig, AllReducers);
